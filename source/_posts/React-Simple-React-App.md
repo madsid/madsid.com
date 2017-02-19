@@ -7,7 +7,7 @@ desc: Simple React App
 
 Learn the basics of react by creating a simple app with just using react and not worry about anything else.
 
-**[Demo](https://github.com/madsid/myReact/tree/chucknorris)**  || **[Code](https://github.com/madsid/myReact/tree/chucknorris)** 
+**[Demo](http://madsid.com/pages/chucknorris/)**  || **[Code](https://github.com/madsid/myReact/tree/chucknorris)** 
 
 ## You Will Learn
 - React Components ( Container and presentation)
