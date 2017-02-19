@@ -38,10 +38,10 @@ State is also a javascript object but stores the application information and can
 ### **[Component Lifecycle:](https://facebook.github.io/react/docs/react-component.html)**
 React provides super awesome functions for each components to use for several purposes and are called for each event that occurs in the life cycle of a component. Some of them are  
 
-#### **ComponentWillMount():** 
+#### **`ComponentWillMount()`:** 
 This function is called when the component is going to mount to the page.  
 
-#### **ComponentDidMount():**
+#### **`ComponentDidMount()`:**
 This function is called when the component is mounted to the page. This is when we fetch the data (Jokes in this case) and render them.  
 
 ### **Inline Styles:** 
@@ -137,9 +137,9 @@ class JokeBlock extends Component {
 
 Let's set the state in constructor to an empty array which is loaded later. As soon as the component mounts we make the call to get the jokes data.  
 
-The most important thing to notice in the code it setState() to set the state when data is received. This let’s react know something is changed and this component has to be re-rendered.  
+The most important thing to notice in the code it `this.setState()` to set the state when data is received. This let’s react know something is changed and this component has to be re-rendered.  
 
-There is an onClick handler for the more link which calls the getData() function to fetch new joke dataset and updates the state.  
+There is an onClick handler for the more link which calls the `getData()` function to fetch new joke dataset and updates the state.  
 
 ```jsx
 import React, { Component } from 'react';
@@ -157,10 +157,10 @@ class Joke extends Component {
   }
 }
 ```
-It displays whatever data it receives from the props object. Which you can notice from this.props.data in the code.  
+It displays whatever data it receives from the props object. Which you can notice from `this.props.data` in the code.  
 
 # What Next  
 
 I hope you enjoyed this article as much as I did writing it. This is my first article so please excuse my mistakes.  
 
-I recommend to checkout redux or flux for a full react application with efficient state management once you get familiar with react. Also ES6 is heavily used in react community so, check it out as well. 
+I recommend to checkout [redux](http://redux.js.org/) or [flux](https://facebook.github.io/flux/) for a full react application with efficient state management once you get familiar with react. Also ES6 is heavily used in react community so, check it out as well. 
